@@ -1,0 +1,11 @@
+# JDK used only on JitPack’s build VMs — not your Android Studio JDK.
+# AGP 8.13+ requires JDK 17+; JDK 11 will fail the remote build.
+jdk:
+  - openjdk21
+before_install:
+  - chmod +x gradlew scripts/prepareJitpackEnvironment.sh
+  - ./scripts/prepareJitpackEnvironment.sh
+# JitPack defaults to ./gradlew publishToMavenLocal on the *root* project only.
+# maven-publish is applied on :filepicker, so publish the library module explicitly:
+install:
+  - ./gradlew :filepicker:publishReleasePublicationToMavenLocal --no-daemon
