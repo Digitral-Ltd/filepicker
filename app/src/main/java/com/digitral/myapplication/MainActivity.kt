@@ -52,19 +52,19 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         binding.camera.setOnClickListener {
             //launchCameraNew(FilePicker.REQ_CODE_CAMERA, null, callback, true, false)
             //initFilePicker(callback)
-            //mFilePicker?.pickImage(callback)
-            mFilePicker?.clear()
-            mFilePicker?.setCallback(callback)
-            mFilePicker?.launchCamera(1,null)
+            mFilePicker?.pickImage(callback)
+            //mFilePicker?.clear()
+            //mFilePicker?.setCallback(callback)
+            //mFilePicker?.launchCamera(1,null)
         }
 
         binding.gallery.setOnClickListener {
             //launchGalleryNew(FilePicker.REQ_CODE_GALLERY, null, callback, true, false)
             //initFilePicker(callback)
-            //mFilePicker?.pickImage(callback)
-            mFilePicker?.clear()
-            mFilePicker?.setCallback(callback)
-            mFilePicker?.launchGallery(2, null)
+            mFilePicker?.pickImage(callback)
+            //mFilePicker?.clear()
+            //mFilePicker?.setCallback(callback)
+            //mFilePicker?.launchGallery(2, null)
         }
 
     }

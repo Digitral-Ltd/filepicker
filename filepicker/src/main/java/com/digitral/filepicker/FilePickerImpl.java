@@ -769,7 +769,6 @@ public class FilePickerImpl extends FilePicker {
         sheet.setOptionListener(new PhotoOptionBottomSheet.OptionListener() {
             @Override
             public void onCameraClick() {
-                clear();
                 if (compressEnabled) {
                     compressSize(80);
                 }
@@ -778,7 +777,6 @@ public class FilePickerImpl extends FilePicker {
 
             @Override
             public void onGalleryClick() {
-                clear();
                 if (compressEnabled) {
                     compressSize(80);
                 }
