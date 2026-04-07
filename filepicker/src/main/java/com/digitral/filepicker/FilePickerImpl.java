@@ -138,7 +138,7 @@ public class FilePickerImpl extends FilePicker {
     private boolean permissionDeniedOnce = false;
 
     private static String fileProviderAuthority(Context context) {
-        return context.getApplicationContext().getPackageName() + ".fileprovider";
+        return context.getApplicationContext().getPackageName() + ".filepicker.sdk_fileprovider";
     }
 
     private FilePickerImpl(AppCompatActivity activity, FilePickerCallback callback, ActivityResultCaller caller) {

@@ -1,0 +1,45 @@
+# Gradle
+.gradle/
+**/build/
+build/
+
+# Local configuration (SDK path, secrets — never commit)
+local.properties
+
+# Android build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+captures/
+
+# NDK / CMake
+.externalNativeBuild/
+.cxx/
+
+# Keystores (do not commit signing keys)
+*.jks
+*.keystore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
